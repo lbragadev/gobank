@@ -3,7 +3,7 @@ build:
 	go build -o bin/gobank
 
 .PHONY: run
-run:
+run: build
 	./bin/gobank
 
 .PHONY: start-db

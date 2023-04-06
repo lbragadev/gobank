@@ -6,10 +6,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: gobank_db
     volumes:
-       - postgres-db:/data/postgres
+      - /var/lib/postgresql/data
     ports:
       - "5001:5432"
-
-volumes:
-  postgres-db:
-    driver: local
